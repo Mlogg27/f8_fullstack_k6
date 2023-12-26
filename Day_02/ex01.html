@@ -17,15 +17,17 @@
     </header>
     <main>
       <form name="đặt_hàng" method="post">
-        <table border="0" width="100%" cellpadding="5">
+        <table border="0" width="100%">
           <tr>
             <th>
-              <label for="first_name" style="text-align: left"
+              <label for="first_name" style="display: block; text-align: left"
                 ><b>First name</b></label
               >
             </th>
             <th>
-              <lable for="last_name"><b>Last name</b></lable>
+              <label for="last_name" style="display: block; text-align: left"
+                ><b>Last name</b></label
+              >
             </th>
           </tr>
           <tr>
@@ -47,19 +49,27 @@
             </td>
           </tr>
           <tr>
+            <th>
+              <label for="e-address" style="display: block; text-align: left"
+                ><b>Email address</b></label
+              >
+            </th>
+            <th>
+              <label for="address" style="display: block; text-align: left"
+                ><b>Address</b></label
+              >
+            </th>
+          </tr>
+          <tr>
             <td>
-              <lable for="e_address"><b>Email address</b></lable
-              ><br />
               <input
                 style="width: 85%"
                 type="email"
-                id="e_address"
+                id="e-address"
                 placeholder="john@example.com"
               />
             </td>
             <td>
-              <lable for="address"><b>Address</b></lable
-              ><br />
               <input
                 style="width: 85%"
                 type="text"
@@ -69,9 +79,19 @@
             </td>
           </tr>
           <tr>
+            <th>
+              <label for="city" style="display: block; text-align: left"
+                ><b>City</b></label
+              >
+            </th>
+            <th>
+              <label for="state" style="display: block; text-align: left"
+                ><b>State</b> (optional)</label
+              >
+            </th>
+          </tr>
+          <tr>
             <td>
-              <lable for="city"><b>City</b></lable
-              ><br />
               <input
                 style="width: 85%"
                 type="text"
@@ -80,14 +100,23 @@
               />
             </td>
             <td>
-              <lable for="state"><b>State</b> (optional)</lable><br />
               <input style="width: 85%" type="text" id="state" />
             </td>
           </tr>
           <tr>
+            <th>
+              <label for="zip" style="display: block; text-align: left"
+                ><b>Zip code</b></label
+              >
+            </th>
+            <th>
+              <label for="country" style="display: block; text-align: left"
+                ><b>Country</b></label
+              >
+            </th>
+          </tr>
+          <tr>
             <td>
-              <lable for="zip"><b>ZIP code</b></lable
-              ><br />
               <input
                 style="width: 85%"
                 type="text"
@@ -96,12 +125,10 @@
               />
             </td>
             <td>
-              <lable for="country"><b>Country</b></lable
-              ><br />
               <select
                 name="country"
                 id="country"
-                style="width: 86%; height: 23px"
+                style="width: 87%; height: 23px"
               >
                 <option value="op1">United Kingdom</option>
                 <option value="op2">Việt Nam</option>
@@ -110,7 +137,7 @@
             </td>
           </tr>
         </table>
-        <input type="submit" name="" value="" />
+        <button>SEND ME FREE COFFEE</button>
       </form>
     </main>
   </body>
