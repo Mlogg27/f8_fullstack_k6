@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Access Manager</title>
+    <link rel="stylesheet" href="ex03.css" />
+  </head>
+  <body>
+    <form>
+      <table>
+        <div class="input-user">
+          <tr>
+            <td><label for="name">Username</label></td>
+            <td><input id="name" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password</label></td>
+            <td><input id="pass" type="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="city">City of Employment</label></td>
+            <td><input id="city" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label for="web_server">Web server</label></td>
+            <td>
+              <select id="web_server">
+                <option value="">- Choose a server -</option>
+                <option value="1">F8</option>
+                <option value="2">F8 lap trinh</option>
+              </select>
+            </td>
+          </tr>
+        </div>
+        <div id="role-text">
+          <tr>
+            <td rowspan="4"><label>Please specify your role:</label></td>
+            <td>
+              <label> <input type="radio" value="1" name="role" /> Admin</label>
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><label>Please specify your role:</label></td> -->
+            <td>
+              <label>
+                <input type="radio" value="2" name="role" /> Manager</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><label>Please specify your role:</label></td> -->
+            <td>
+              <label>
+                <input type="radio" value="3" name="role" /> Engineer</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><label>Please specify your role:</label></td> -->
+            <td>
+              <label> <input type="radio" value="4" name="role" /> Guest</label>
+            </td>
+          </tr>
+        </div>
+        <div id="check-box">
+          <tr>
+            <td rowspan="3"><label>Single Sign-up co the following</label></td>
+            <td>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  value="1"
+                  name="type-signup"
+                />Mail</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><label>Single Sign-up co the following</label></td> -->
+            <td>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  value="2"
+                  name="type-signup"
+                />Payroll</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><label>Single Sign-up co the following</label></td> -->
+            <td>
+              <label class="checkbox">
+                <input
+                  type="checkbox"
+                  value="3"
+                  name="type-signup"
+                />Self-service</label
+              >
+            </td>
+          </tr>
+        </div>
+      </table>
+      <div>
+        <button type="submit" class="submit-1">Login</button>
+        <button type="reset" class="submit-2">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>

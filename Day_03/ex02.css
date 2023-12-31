@@ -1,0 +1,41 @@
+body{
+    background-color: lavender;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+}
+hr{
+    width:60px;
+    margin: 0 auto;
+    border: 2px solid #4ADEDE;
+    margin-bottom: 90px;
+}   
+#blockquote-box {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+.avatar, blockquote{
+    margin: 0;
+}
+.avatar{
+    width:80px;
+    margin-right: 10px
+}
+#blockquote-box .image-text{
+    display: flex;
+    margin-bottom: 0px;
+    align-items: center;
+}
+h3 {
+    text-align: left;
+   margin-left: 85px
+  }
+blockquote{
+    font-style: italic;
+    font-size:20px
+}

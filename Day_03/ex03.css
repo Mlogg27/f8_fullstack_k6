@@ -1,0 +1,21 @@
+#name{
+    width: 400px
+}
+#city{
+    width:400px
+}
+#pass{
+    width:400px
+}
+#web_server{
+    width:250px;
+    height:25px
+}
+.submit-1{
+    margin-left:200px;
+}
+.submit-1, .submit-2{
+    border: 1px solid blue;
+    color: black;
+    background-color: white;
+}
