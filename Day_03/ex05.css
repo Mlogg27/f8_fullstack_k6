@@ -1,0 +1,43 @@
+.banner{
+    display:flex;
+    justify-content: center;
+}
+.banner button{
+    border: none;
+    background-color: rgb(42, 127, 163);
+    width: 300px;
+    height: 80px
+}
+.banner a{
+    text-decoration: none;
+    color: white;  
+    font-size: 45px; 
+}
+h1{
+    text-align: center;
+    font-size: 70px
+}
+p{
+    text-align:center;
+    font-family: Calibri, heading;
+    font-size: 30px;
+    opacity: 0.5
+}
+.box{
+    display: flex;
+    justify-content: center;
+}
+.title-1{
+    margin-right:10px
+}
+.title-1, .title-2{
+    border:none;
+    background-color: rgb(68, 64, 64);
+    width: 300px;
+    height: 80px
+}
+.title-1 a, .title-2 a{
+    text-decoration: none;
+    color: white;  
+    font-size: 25px; 
+}
