@@ -1,7 +1,7 @@
 .footer-form{
     border-style: thin;
     background-color: #012a4a;
-    height: 180px;
+    height: 180px auto;
     border-radius:8px;
     display: block;
     padding-top: 5px;

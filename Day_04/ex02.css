@@ -1,0 +1,72 @@
+.heading h1{
+    font-family: 'BebasNeue';
+    color: #260701;
+    text-align: center;
+}
+.heading h2{
+    font-family: 'Alfa Slab One';
+    color: #260701;
+    text-align: center;
+    font-size: 60px;
+}
+form.book-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.row-1, .row-2, .row-3 {
+    flex: 1;
+    padding: 10px;
+}
+input, label, button{
+    flex: 1;
+    margin-right: 10px;
+    height: 40px;
+    border: 1px solid black;
+}
+button{
+    border-radius: 5px;
+    height: 45px;
+    background-color: #9d0208;
+    color: white;
+    font-family: 'Alfa Slab One';
+    border: none;
+    font-size: 20px;
+}
+.custom-date input, .custom-time input{
+    width: 0%;
+    opacity: 0;
+}    
+.row-1 input::placeholder, .row-3 input::placeholder{
+    font-family: 'BebasNeue';
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.placeholder{
+    font-size: 16px;
+    font-family: 'BebasNeue';
+    font-weight: bold;
+}
+.custom-date input:focus, .custom-time input:focus{
+    opacity: 1;
+    width:100%;
+}
+.custom-date input:focus + .placeholder,.custom-time input:focus + .placeholder {
+    opacity: 0;
+}
+.custom-date input:not(:focus):valid + .placeholder, .custom-time input:not(:focus):valid + .placeholder {
+    opacity: 0;
+}
+.custom-date input:not(:focus):valid, .custom-time input:not(:focus):valid{
+    opacity: 1;
+    width:100%;
+}
