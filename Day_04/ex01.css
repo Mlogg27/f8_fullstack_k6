@@ -1,10 +1,11 @@
 .footer-form{
     border-style: thin;
     background-color: #012a4a;
-    height: 180px auto;
+    height: 190px ;
     border-radius:8px;
-    display: block;
+    display: flex;
     padding-top: 5px;
+    flex:1;
 }
 .text{
     margin-left: 30px;
