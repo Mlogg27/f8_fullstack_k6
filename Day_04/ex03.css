@@ -1,0 +1,122 @@
+h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'BebasNeue';
+}
+ul{
+    list-style: none;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 540px;
+    margin: 0 auto;
+}
+.nav-item input{
+    display: none;
+}
+.nav-item{
+    background-color: #dee2e6;
+    color: black;
+    padding: 18px;
+}
+.input-3{
+    margin-right: 2px;
+}
+header{
+    margin-bottom: 40px;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.product .action{
+    display: flex;
+    flex-direction: column;
+}
+.product .image{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.product .action .row-1{
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+}
+.product .image img{
+    width: 300px;
+}
+.product .action img{
+    width: 60px;
+    filter: brightness(0) invert(1);
+   -webkit-filter: brightness(0) invert(1);
+}
+.product .action a{
+    background-color: #184e77;
+}
+.product .action .row-2{
+    display: flex;
+    margin-top: 5px;
+}
+.product .action .row-2 a{
+    color: white;
+    flex:1;
+    font-size: 30px;
+    max-width: 280px;
+    text-align: center;
+    padding: 10px;
+}
+.product .star{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+.product .star img{
+    width: 25px;
+}
+.product .name-price{
+    display: flex;
+    flex-direction: column;
+}
+.product .name-price a, .product .name-price span{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}
+.image img[src="https://images.unsplash.com/photo-1704219116563-643c4788cbd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"]{
+    position: relative;
+    z-index: 3;
+}
+.image img[src="https://images.unsplash.com/photo-1704323019315-f6a68369ceae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D"]
+{
+    position: absolute;
+    z-index: 1;
+}
+.action{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 58%
+}
+.nav-item:hover{
+    background-color: #184e77;
+    color: white;
+}
+.nav-item:focus-within, .nav-item input:focus {
+  background-color:#184e77;
+  color: white;
+}
+.image:hover img[src="https://images.unsplash.com/photo-1704219116563-643c4788cbd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"] {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
