@@ -1,0 +1,157 @@
+@font-face {
+  font-family: Lato;
+  src: url(../css/font/Lato-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Lobster;
+  src: url(../css/font/Lobster-Regular.ttf);
+  font-weight: 400;
+}
+body {
+  margin-left: 30px;
+}
+h1 {
+  font-family: Lobster, sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+.sub-title span {
+  color: red;
+}
+.sub-title {
+  color: gray;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+}
+.form-box {
+  display: flex;
+  flex-direction: column;
+}
+.input-item {
+  display: flex;
+  max-width: 600px;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+.icons {
+  color: white;
+  padding: 5px;
+}
+.icon-1 {
+  background-color: gray;
+  order: -1;
+}
+.icon-2,
+.icon-3 {
+  color: gray;
+  font-size: 10px;
+}
+.icon-2 {
+  position: absolute;
+  left: 100%;
+  top: 0.2rem;
+  transform: translateX(-200%);
+}
+.icon-3 {
+  position: absolute;
+  left: 100%;
+  top: 0.2rem;
+  transform: translateX(-230%);
+  display: none;
+}
+.input-item input {
+  width: 100%;
+  height: 1.5rem;
+}
+.input-item select {
+  width: 100%;
+}
+.input-item textarea {
+  width: 100%;
+  height: 6rem;
+}
+.input-item p {
+  color: white;
+  background-color: black;
+  width: 6rem;
+  height: 1rem;
+  position: absolute;
+  left: 10%;
+  font-size: 11px;
+  padding: 0.5rem;
+  text-align: center;
+  transform: translateY(-150%);
+  display: none;
+}
+.input-item p::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 15px solid black;
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  display: none;
+}
+.input-item input:focus ~ p,
+.input-item input:focus ~ p::after,
+.input-item input:active ~ p,
+.input-item input:active ~ p::after {
+  display: block;
+}
+.input-item input:focus ~ .icon-2,
+.input-item input:active ~ .icon-2,
+.input-item textarea:focus ~ .icon-2,
+.input-item textarea:active ~ .icon-2 {
+  display: none;
+}
+.input-item input:focus ~ .icon-3,
+.input-item input:active ~ .icon-3,
+.input-item textarea:focus ~ .icon-3,
+.input-item textarea:active ~ .icon-3 {
+  display: block;
+}
+.input-item input:focus,
+.input-item input:hover,
+.input-item textarea:hover,
+.input-item input:active,
+.input-item textarea:focus,
+.input-item textarea:active {
+  border: 1px solid black;
+}
+.input-item input:focus + span,
+.input-item input:hover + span,
+.input-item textarea:hover + span,
+.input-item input:active + span,
+.input-item textarea:focus + span,
+.input-item textarea:active + span {
+  background-color: black;
+}
+.button-check {
+  display: flex;
+  max-width: 600px;
+  justify-content: space-between;
+}
+.button-check input {
+  border: gray;
+}
+.button-check button {
+  color: white;
+  width: 6rem;
+  height: 2rem;
+  background-color: red;
+  border: none;
+}
+.input-item select:focus,
+.input-item select:active,
+.input-item select:hover {
+  border: 1px solid black;
+}
+.input-item select:focus + span,
+.input-item select:active + span,
+.input-item select:hover + span {
+  background-color: black;
+}

@@ -1,54 +1,55 @@
 h1 {
-margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 hr {
-    width: 65px;
-    margin-right: 1500px;
-    border: 2px solid darkorange;
+  width: 65px;
+  margin-right: 1500px;
+  border: 2px solid darkorange;
 }
-#container{
-    display: grid;
-    grid-template-columns: 30% 70%;
-    height: 100%
+#container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 100%;
 }
-#column{
-    padding: 10px;
-    border: 0
+#column {
+  padding: 10px;
+  border: 0;
 }
-ul{
-    list-style-type: none;
-    padding: 0;}
-li{
-    display: flex;
-    margin-bottom: 0px;
-    align-items: center
+ul {
+  list-style-type: none;
+  padding: 0;
 }
-.image{
-    width: 20px;
-    margin-right: 10px;
+li {
+  display: flex;
+  margin-bottom: 0px;
+  align-items: center;
 }
-p{
-    color: grey;
+.image {
+  width: 20px;
+  margin-right: 10px;
 }
-input{
-    margin-bottom: 10px;
-    width:80%;
-    height:30px;
+p {
+  color: grey;
 }
-.input-text{
-    margin-top: 20px
+input {
+  margin-bottom: 10px;
+  width: 80%;
+  height: 30px;
 }
-textarea{
-    width: 80%;
-    height: 150px;
-    margin-bottom: 10px;
-    display: block;
+.input-text {
+  margin-top: 20px;
 }
-button{
-    background-color: #20b2aa;
-    color: white;
-    border: none;
-    margin-top: 10px;
-    height:40px;
-    width:150px;
+textarea {
+  width: 80%;
+  height: 150px;
+  margin-bottom: 10px;
+  display: block;
+}
+button {
+  background-color: #20b2aa;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  height: 40px;
+  width: 150px;
 }
