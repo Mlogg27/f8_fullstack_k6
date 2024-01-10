@@ -1,0 +1,49 @@
+.body {
+  display: flex;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.header {
+  display: flex;
+  background-color: rgb(227, 79, 16);
+  max-width: 1500px;
+  position: relative;
+}
+.header h2 {
+  color: white;
+  flex: 1;
+  padding: 0.2rem;
+  margin-left: 2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+.icons {
+  color: white;
+  font-size: 1.5rem;
+}
+.icon-1 {
+  position: absolute;
+  transform: translateY(60%);
+  left: 0.5rem;
+}
+.icon-2 {
+  position: absolute;
+  transform: translateY(60%);
+  left: 0.5rem;
+  display: none;
+}
+.content p {
+  display: none;
+}
+.header:focus ~ p {
+  display: block;
+}
+.header:focus .icon-1 {
+  display: none;
+}
+.header:focus .icon-2 {
+  display: block;
+}
